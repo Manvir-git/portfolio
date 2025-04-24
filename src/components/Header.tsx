@@ -1,26 +1,23 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import '../styles/Header.css';
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [activeSection, setActiveSection] = useState('home');
+  const [activeSection, setActiveSection] = useState('');
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['home', 'about', 'skills', 'projects-experience', 'certificates', 'education', 'contact'];
-      const scrollPosition = window.scrollY + 100; // Offset for header height
-
-      for (const section of sections) {
+      const sections = ['about', 'skills', 'projects', 'education', 'contact'];
+      const currentSection = sections.find(section => {
         const element = document.getElementById(section);
         if (element) {
-          const { top, bottom } = element.getBoundingClientRect();
-          const isVisible = top < window.innerHeight / 2 && bottom >= window.innerHeight / 2;
-          if (isVisible) {
-            setActiveSection(section);
-            break;
-          }
+          const rect = element.getBoundingClientRect();
+          return rect.top <= 100 && rect.bottom >= 100;
         }
-      }
+        return false;
+      });
+      setActiveSection(currentSection || '');
     };
 
     window.addEventListener('scroll', handleScroll);

@@ -1,12 +1,8 @@
 import React from 'react';
-import '../styles/ProjectsExperience.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { 
-  faCheckCircle, faGlobe, faUserShield, faShoppingCart,
-  faDatabase, faBookOpen, faPalette, faCode, faMobile, faSearch,
-  faServer, faUsers, faChartLine, faBrain, faLaptopCode, 
-  faLayerGroup, faClock, faPuzzlePiece, faDownload
-} from '@fortawesome/free-solid-svg-icons';
+import { faCode, faLaptopCode, faDatabase, faServer, faMobileAlt, faGlobe, faTools, faCog } from '@fortawesome/free-solid-svg-icons';
+import { faHtml5, faCss3, faJs, faReact, faNodeJs, faGitAlt } from '@fortawesome/free-brands-svg-icons';
+import '../styles/ProjectsExperience.css';
 
 const ProjectsExperience = () => {
   return (
