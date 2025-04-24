@@ -1,0 +1,196 @@
+.education {
+  padding: 4rem 2rem;
+  background-color: #ffffff;
+}
+
+.education h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #1a73e8;
+  margin-bottom: 4rem;
+  position: relative;
+  font-weight: 600;
+}
+
+.education h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background-color: #1a73e8;
+}
+
+.education-timeline {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  padding-left: 2rem;
+}
+
+.education-timeline::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: #1a73e8;
+}
+
+.timeline-entry {
+  position: relative;
+  margin-bottom: 3rem;
+  padding-left: 2rem;
+}
+
+.timeline-entry:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -2.5rem;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #1a73e8;
+  border: 4px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px #1a73e8;
+}
+
+.timeline-content {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.timeline-content:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-content h3 {
+  font-size: 1.5rem;
+  color: #1a73e8;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.education-subtitle {
+  color: #666;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.education-details {
+  margin: 1rem 0;
+}
+
+.education-details h4 {
+  color: #333;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.location {
+  color: #666;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.courses {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-top: 0.5rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid #eee;
+}
+
+.timeline-date {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  color: #1a73e8;
+  font-size: 0.9rem;
+  font-weight: 500;
+  background-color: #f0f4f8;
+  padding: 0.3rem 0.8rem;
+  border-radius: 15px;
+}
+
+.fade-in {
+  animation: fadeIn 0.8s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .education {
+    padding: 3rem 1rem;
+  }
+
+  .education h2 {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .education-timeline {
+    padding-left: 1rem;
+  }
+
+  .timeline-entry {
+    padding-left: 1.5rem;
+  }
+
+  .timeline-dot {
+    left: -2rem;
+    width: 16px;
+    height: 16px;
+  }
+
+  .timeline-content {
+    padding: 1.5rem;
+  }
+
+  .timeline-content h3 {
+    font-size: 1.3rem;
+  }
+
+  .education-subtitle {
+    font-size: 1rem;
+  }
+
+  .education-details h4 {
+    font-size: 1.1rem;
+  }
+
+  .courses {
+    font-size: 0.9rem;
+  }
+
+  .timeline-date {
+    position: relative;
+    top: auto;
+    right: auto;
+    display: inline-block;
+    margin-top: 1rem;
+  }
+} 
