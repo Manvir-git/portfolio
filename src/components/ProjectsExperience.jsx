@@ -1,7 +1,11 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCode, faLaptopCode, faDatabase, faServer, faMobileAlt, faGlobe, faTools, faCog } from '@fortawesome/free-solid-svg-icons';
-import { faHtml5, faCss3, faJs, faReact, faNodeJs, faGitAlt } from '@fortawesome/free-brands-svg-icons';
+import { 
+  faLayerGroup, faBrain, faPuzzlePiece, faClock,
+  faBookOpen, faUserShield, faMobile, faSearch,
+  faShoppingCart, faUsers, faChartLine, faPalette,
+  faCode, faLaptopCode, faDatabase, faServer, faGlobe
+} from '@fortawesome/free-solid-svg-icons';
 import '../styles/ProjectsExperience.css';
 
 const ProjectsExperience = () => {
